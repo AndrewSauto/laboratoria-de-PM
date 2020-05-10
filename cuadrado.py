@@ -62,7 +62,7 @@ def go_to_goal (xgoal, ygoal):
 	angular_speed = ka * (dtheta)
 
         velocity_message.linear.x = linear_speed
-        velocity_message.angular.z = angular_speed
+        velocity_message.angular.z = 0
         velocity_publisher.publish(velocity_message)
         print ('x=', x, 'y=', y)
 
